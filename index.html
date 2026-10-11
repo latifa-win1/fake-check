@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Осторожно, ФЕЙК!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Шапка -->
+<header>
+<div class="container nav-container">
+<div class="logo">ОСТОРОЖНО, <span>ФЕЙК!</span></div>
+<nav>
+<a href="#signs">ПРИЗНАКИ</a>
+<a href="#check">ПРОВЕРКА</a>
+<a href="#test">ТЕСТ</a>
+</nav>
+<a href="#test" class="btn-nav">ПРОЙТИ ТЕСТ</a>
+</div>
+</header>
+
+<!-- Главный экран -->
+<section class="hero">
+<div class="container">
+<h1>НЕ ВЕРЬ<br>С ПЕРВОГО<br><span class="highlight">КЛИКА</span></h1>
+<p class="subtitle">Памятка по обществознанию: как распознать фейк в интернете</p>
+<a href="pamyatka.pdf" download class="btn-download">📥 СКАЧАТЬ ПАМЯТКУ (PDF)</a>
+</div>
+</section>
+
+<!-- Раздел 1: Признаки -->
+<section id="signs" class="section">
+<div class="container">
+<div class="section-label">РАЗДЕЛ 01</div>
+<h2>ПРИЗНАКИ <span class="highlight">ФЕЙКА</span></h2>
+<p class="section-desc">Пять сигналов, что перед вами недостоверная информация.</p>
+
+<div class="cards-grid">
+<div class="card">
+<div class="card-icon">📢</div>
+<div class="card-num">01</div>
+<h3>КРИЧАЩИЙ ЗАГОЛОВОК</h3>
+<p>Капслок, восклицательные знаки, слова «ШОК!», «СРОЧНО!», «ВСЯ ПРАВДА».</p>
+</div>
+<div class="card">
+<div class="card-icon">🔍</div>
+<div class="card-num">02</div>
+<h3>НЕТ ИСТОЧНИКА</h3>
+<p>«Учёные доказали», «знакомый из полиции сказал» — без имён, ссылок и документов.</p>
+</div>
+<div class="card">
+<div class="card-icon">📤</div>
+<div class="card-num">03</div>
+<h3>ПРОСЬБА ПЕРЕСЛАТЬ</h3>
+<p>«Перешли всем знакомым» — так фейки и разлетаются. Настоящие новости в этом не нуждаются.</p>
+</div>
+<div class="card">
+<div class="card-icon">😡</div>
+<div class="card-num">04</div>
+<h3>ДАВИТ НА ЭМОЦИИ</h3>
+<p>Страх, гнев, жалость. Сильная эмоция выключает критическое мышление.</p>
+</div>
+<div class="card">
+<div class="card-icon">📅</div>
+<div class="card-num">05</div>
+<h3>НЕТ ДАТЫ ИЛИ АВТОРА</h3>
+<p>Непонятно, когда это опубликовали и кто это написал. Старое выдают за свежее.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Раздел 2: Проверка -->
+<section id="check" class="section bg-light">
+<div class="container">
+<div class="section-label">РАЗДЕЛ 02</div>
+<h2>КАК ПРОВЕРИТЬ <span class="highlight">НОВОСТЬ</span></h2>
+<p class="section-desc">Четыре шага, которые занимают пару минут. Отмечайте пройденные!</p>
+
+<div class="checklist-wrapper">
+<div class="checklist">
+<div class="check-item">
+<input type="checkbox" id="c1" onchange="updateProgress()">
+<label for="c1"><strong>1. Остановитесь.</strong> Новость вызвала сильную эмоцию? Сделайте паузу на минуту.</label>
+</div>
+<div class="check-item">
+<input type="checkbox" id="c2" onchange="updateProgress()">
+<label for="c2"><strong>2. Найдите первоисточник.</strong> Кто первым сообщил? Ищите ссылку на официальный сайт.</label>
+</div>
+<div class="check-item">
+<input type="checkbox" id="c3" onchange="updateProgress()">
+<label for="c3"><strong>3. Сверьте с другими СМИ.</strong> Важные события освещают сразу несколько крупных изданий.</label>
+</div>
+<div class="check-item">
+<input type="checkbox" id="c4" onchange="updateProgress()">
+<label for="c4"><strong>4. Проверьте дату.</strong> Посмотрите, когда опубликован материал. Старые новости часто выдают за свежие.</label>
+</div>
+<div class="progress-box">
+<h3>ВАША ПРОВЕРКА</h3>
+<div class="progress-num" id="progress-num">0%</div>
+<div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+<p>Нажимайте на шаги слева, когда проверите новость по каждому пункту.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Раздел 3: Что делать -->
+<section class="section dark-section">
+<div class="container">
+<div class="section-label yellow-label">РАЗДЕЛ 04</div>
+<div class="split-layout">
+<div class="split-left">
+<h2>ЧТО ДЕЛАТЬ,<br>ЕСЛИ <span class="highlight">ПОПАЛСЯ</span></h2>
+<p>Поверили фейку или уже поделились им? Ничего страшного — вот пошаговая инструкция.</p>
+<div class="icon-big">🚫</div>
+</div>
+<div class="split-right">
+<div class="accordion-item">
+<div class="accordion-header"><span>1</span> НЕ ПАНИКУЙТЕ И НЕ ОПРАВДЫВАЙТЕСЬ</div>
+<div class="accordion-body">На фейки попадаются все — журналисты, политики, учёные. Это не глупость, а результат работы людей, которые умеют манипулировать.</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header"><span>2</span> УДАЛИТЕ РЕПОСТ</div>
+<div class="accordion-body">Если вы поделились фейком, удалите публикацию как можно скорее.</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header"><span>3</span> ПРЕДУПРЕДИТЕ ТЕХ, КОМУ ОТПРАВИЛИ</div>
+<div class="accordion-body">Напишите им, что информация оказалась ложной.</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header"><span>4</span> ПОЖАЛУЙТЕСЬ НА ПУБЛИКАЦИЮ</div>
+<div class="accordion-body">Нажмите кнопку «Пожаловаться» на платформе, где был найден фейк.</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-header"><span>5</span> СМЕНИТЕ ПАРОЛИ</div>
+<div class="accordion-body">Если вы ввели свои данные на подозрительном сайте, срочно смените пароли.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Раздел 4: Тест -->
+<section id="test" class="section">
+<div class="container">
+<div class="section-label">РАЗДЕЛ 05</div>
+<h2>ТЕСТ: ОТЛИЧИШЬ <span class="highlight">ФЕЙК?</span></h2>
+<p class="section-desc">Короткие ситуации. Решите, где правда, а где фейк.</p>
+
+<div class="test-box">
+<div class="test-header">
+<span id="question-number">ВОПРОС 1/6</span>
+<span id="score-display">СЧЁТ: 0</span>
+</div>
+<div class="test-question" id="question-text">Загрузка...</div>
+<div class="test-buttons" id="buttons-container">
+<button onclick="checkAnswer('fake')" class="btn-fake">✖ ФЕЙК</button>
+<button onclick="checkAnswer('true')" class="btn-true">✔ ПРАВДА</button>
+</div>
+<div class="test-result" id="result-text"></div>
+</div>
+</div>
+</section>
+
+<!-- Подвал -->
+<footer>
+<div class="container">
+<div class="footer-top">
+<h2>ОСТОРОЖНО, <span class="highlight">ФЕЙК!</span></h2>
+<a href="pamyatka.pdf" download class="btn-download">📥 СКАЧАТЬ ПАМЯТКУ</a>
+</div>
+<p>Памятка для всех, кто пользуется интернетом. Делитесь ею с родными и друзьями.</p>
+<div class="footer-bottom">
+<p>© 2026 «Осторожно, Фейк!»</p>
+<p>Не верь с первого клика.</p>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
